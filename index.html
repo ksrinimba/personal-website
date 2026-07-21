@@ -3,38 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cloudflare Website</title>
+    <title>Srini | DevOps & Cloud Platform Architect</title>
     <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            max-width: 650px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 60px auto;
             padding: 0 20px;
-            color: #333;
-            background-color: #f9f9f9;
+            color: var(--text);
+            background-color: var(--bg);
         }
         h1 {
-            color: #000;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+        }
+        .title-accent {
+            color: var(--accent);
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
         }
         .card {
-            background: white;
-            padding: 20px;
+            background: var(--surface);
+            padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+        }
+        li strong {
+            color: var(--text);
+        }
+        .subdomains {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+        }
+        .subdomains a {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+        }
+        .subdomains a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Website</h1>
-    
-    <div class="card">
-        <p>Hello World! This static site is successfully being served directly from edge infrastructure.</p>
-        <p>You can modify this text to include your own bio, project details, or links.</p>
-    </div>
+    <header>
+        <h1>Srini</h1>
+        <div class="subtitle">Senior DevOps & Cloud Platform Architect</div>
+        <p>Specializing in the design and execution of resilient distributed systems, enterprise cloud migrations, and high-scale automated infrastructure. Building developer platforms that balance strict operational velocity with 99.999% availability.</p>
+    </header>
+
+    <main>
+        <section class="grid">
+            <div class="card">
+                <h3>Core Architecture</h3>
+                <ul>
+                    <li><strong>Orchestration:</strong> Multi-region Kubernetes cluster upgrades, global configuration engines, GitOps execution.</li>
+                    <li><strong>Infrastructure:</strong> Scalable Terraform state management, cross-cloud resiliency (AWS / GCP).</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Next-Gen Platforms</h3>
+                <ul>
+                    <li><strong>Intelligent Systems:</strong> Designing GraphRAG architectures, metadata taxonomy ingestion, and agentic workflows.</li>
+                    <li><strong>Observability:</strong> End-to-end distributed tracing, OpenTelemetry integration, automated incident response loops.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="subdomains">
+            <h3>Active Project Deep Dives</h3>
+            <p>Explore production blueprints and sandbox environments currently active across this domain:</p>
+            <nav>
+                <a href="https://agenticai.devopscloudarchitect.com">🔗 agenticai.</a>
+                <a href="https://sre.devopscloudarchitect.com">🔗 sre.</a>
+                <a href="https://graph.devopscloudarchitect.com">🔗 graph.</a>
+            </nav>
+        </section>
+    </main>
 
 </body>
 </html>
