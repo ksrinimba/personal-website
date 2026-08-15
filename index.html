@@ -80,6 +80,39 @@
         .subdomains a:hover {
             text-decoration: underline;
         }
+        .quick-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--bg);
+        }
+        .btn-accent:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -107,6 +140,11 @@
                     <li><strong>Observability:</strong> End-to-end distributed tracing, OpenTelemetry integration, automated incident response loops.</li>
                 </ul>
             </div>
+        </section>
+
+        <section class="quick-links">
+            <a href="https://sre.devopscloudarchitect.com" class="btn btn-accent" target="_blank" rel="noopener noreferrer">🤖 Try my SRE bot demo</a>
+            <a href="contact.html" class="btn btn-outline">✉️ Let's talk / contact me</a>
         </section>
 
         <section class="subdomains">

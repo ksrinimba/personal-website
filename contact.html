@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Srini</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 0 20px;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+        h1 {
+            font-size: 2.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.04em;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .contact-method:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .contact-method:first-child {
+            padding-top: 0;
+        }
+        .contact-label {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 1.05rem;
+        }
+        .contact-value a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+        .contact-value a:hover {
+            opacity: 0.85;
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover {
+            color: var(--accent);
+        }
+        .back-arrow {
+            margin-right: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+        .back-link:hover .back-arrow {
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">
+            <span class="back-arrow">&larr;</span> Back to Home
+        </a>
+        <h1>Let's Connect</h1>
+        <p class="subtitle">Have a project, opportunity, or just want to chat about DevOps & Cloud Architecture?</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="contact-method">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">
+                    <a href="mailto:ksrinimba@gmail.com">ksrinimba@gmail.com</a>
+                </span>
+            </div>
+            <div class="contact-method">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">
+                    <a href="https://www.linkedin.com/in/srinivas-kambhampati/" target="_blank" rel="noopener noreferrer">srinivas-kambhampati</a>
+                </span>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
